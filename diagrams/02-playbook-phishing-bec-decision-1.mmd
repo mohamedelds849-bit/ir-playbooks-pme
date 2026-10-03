@@ -1,0 +1,17 @@
+flowchart TD
+    A["Courriel suspect signalé ou alerte Google"] --> B{"Identifiants saisis ou MFA validée ?"}
+    B -- Non --> C["S4 : supprimer le courriel chez tous les destinataires, bloquer l'expéditeur / domaine, remercier le salarié"]
+    B -- Oui / incertain --> D["Réinitialiser le mot de passe, déconnecter toutes les sessions, révoquer jetons OAuth et mots de passe d'application"]
+    D --> E{"Connexion de l'attaquant constatée dans les journaux ?"}
+    E -- Non --> F["S3 : surveillance renforcée 14 jours, MFA vérifiée, sensibilisation"]
+    E -- Oui --> G{"Règles de transfert, filtres, délégation ou envois frauduleux ?"}
+    G -- Non --> H["S3 : supprimer les accès, revue des données consultées"]
+    G -- Oui --> I{"Paiement ou changement de RIB en jeu ?"}
+    I -- Non --> J["S2 : prévenir les correspondants touchés, revue des données exposées"]
+    I -- Oui --> K["S1 : appel banque service fraude IMMÉDIAT, appel du client par téléphone, plainte"]
+    J --> L{"Données personnelles exposées ?"}
+    K --> L
+    H --> L
+    L -- Oui --> M["Référent données : évaluer le risque, démarche CNDP recommandée, information des personnes"]
+    L -- Non --> N["Retour d'expérience"]
+    M --> N

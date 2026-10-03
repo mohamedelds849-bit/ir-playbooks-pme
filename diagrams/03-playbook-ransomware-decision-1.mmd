@@ -1,0 +1,20 @@
+flowchart TD
+    A["Fichiers chiffrés ou note de rançon"] --> B["Isoler le ou les postes du réseau, ne pas éteindre"]
+    B --> C{"Le NAS ou plusieurs postes sont touchés ?"}
+    C -- Non --> D["S2 : un poste. Préserver les preuves, vérifier les comptes utilisés"]
+    C -- Oui --> E["S1 : couper le NAS du réseau, débrancher la sauvegarde USB, cellule de crise"]
+    D --> F{"Propagation ou compte administrateur utilisé ?"}
+    F -- Oui --> E
+    F -- Non --> G["Réinstaller le poste, restaurer ses données"]
+    E --> H{"Sauvegarde saine et hors ligne disponible ?"}
+    H -- Oui --> I["Éradiquer puis restaurer depuis la sauvegarde"]
+    H -- Non --> J["Identifier la souche, chercher un déchiffreur sur No More Ransom, avis prestataire et avocat"]
+    J --> K{"Déchiffreur public fiable ?"}
+    K -- Oui --> I
+    K -- Non --> L["Reconstruction et ressaisie ; refus de payer par défaut, décision écrite du gérant si l'option est étudiée"]
+    I --> M{"Indices de vol de données ?"}
+    L --> M
+    G --> M
+    M -- Oui --> N["Référent données : CNDP recommandé, information des personnes, plainte"]
+    M -- Non --> O["Plainte recommandée, signalement maCERT, retour d'expérience"]
+    N --> O

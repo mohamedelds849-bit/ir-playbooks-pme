@@ -1,0 +1,16 @@
+flowchart TD
+    A["Site anormal, alerte hébergeur ou signalement"] --> B["Capturer l'état, demander à l'hébergeur un instantané et les journaux"]
+    B --> C["Mettre le site en maintenance ou le faire suspendre"]
+    C --> D{"Script ou fichier PHP inconnu côté serveur ?"}
+    D -- Non --> E{"Seulement contenu modifié via l'administration ?"}
+    E -- Oui --> F["S2 : compte admin compromis, changer tous les accès, restaurer le contenu"]
+    E -- Non --> G["Analyse approfondie avec l'hébergeur"]
+    D -- Oui --> H["S2 au minimum : web shell présumé, accès serveur et base à considérer comme exposés"]
+    H --> I{"Données clients ou paiement concernés ?"}
+    G --> I
+    F --> I
+    I -- Oui --> J["S1 : prévenir le prestataire de paiement, référent données, avocat, CNDP recommandé"]
+    I -- Non / inconnu --> K["Hypothèse prudente tant que l'analyse n'exclut pas l'accès"]
+    J --> L["Reconstruire depuis code et sauvegarde sains, corriger la faille, changer tous les secrets"]
+    K --> L
+    L --> M["Remise en ligne contrôlée, surveillance 30 jours, retour d'expérience"]
