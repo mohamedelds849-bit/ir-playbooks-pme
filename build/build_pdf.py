@@ -102,6 +102,8 @@ def make_styles(scale=1.0):
     s["h3"] = ParagraphStyle("h3", parent=s["body"], fontName="Body-Bold", fontSize=10.8 * scale,
                              leading=14 * scale, textColor=TEAL, spaceBefore=7 * scale, spaceAfter=3 * scale)
     s["h4"] = ParagraphStyle("h4", parent=s["h3"], fontSize=10 * scale, textColor=colors.black)
+    for h in ("h2", "h3", "h4"):
+        s[h].keepWithNext = 1  # avoid headings stranded at the bottom of a page
     s["li"] = ParagraphStyle("li", parent=s["body"], leftIndent=14, bulletIndent=3, spaceAfter=1.5 * scale,
                              bulletFontName="Body", bulletFontSize=b)
     s["cell"] = ParagraphStyle("cell", parent=s["body"], fontSize=b * 0.86, leading=b * 0.86 * 1.3,
@@ -253,7 +255,7 @@ def code_block(lines, st, width, lang, diag_name):
             f"Diagramme de décision — source Mermaid (non rendu graphiquement dans ce PDF ; "
             f"rendu sur GitHub ou mermaid.live, fichier <font name='Mono'>diagrams/{diag_name}</font>). "
             f"Lecture : chaque flèche « A --&gt; B » est une étape, « -- Oui --&gt; » une branche.",
-            st["caption"]))
+            ParagraphStyle("captionk", parent=st["caption"], keepWithNext=1)))  # stay with the block
     out.append(box)
     out.append(Spacer(1, 5))
     return out

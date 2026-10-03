@@ -100,7 +100,7 @@ Parce que l'attaquant peut garder une session ouverte (cookie), un jeton OAuth a
 *Business Email Compromise* : l'attaquant utilise une vraie boîte compromise ou usurpe un correspondant pour obtenir un virement (changement de RIB, faux président). Prévention : MFA forte, DMARC, blocage du transfert automatique externe, et surtout une **procédure de vérification par téléphone** sur un numéro connu pour tout changement de coordonnées bancaires.
 
 **7. Ransomware : faut-il éteindre le poste ?**
-Par défaut non : on l'isole du réseau, ce qui stoppe la propagation tout en gardant la mémoire, utile à l'analyse. Si le chiffrement local continue et qu'on ne peut pas l'arrêter autrement, on peut mettre en veille prolongée ou couper : on sacrifie des preuves pour sauver des données. La décision et l'heure sont notées.
+Par défaut non : on l'isole du réseau, ce qui stoppe la propagation tout en gardant la mémoire, utile à l'analyse. Si le chiffrement local continue et qu'on ne peut pas l'arrêter autrement, on peut mettre en veille prolongée (la mémoire est écrite dans `hiberfil.sys`, donc en partie conservée) ou, en dernier recours, couper l'alimentation : on sacrifie la mémoire vive pour sauver des données. La décision et l'heure sont notées.
 
 **8. Qu'est-ce que la règle 3-2-1-1-0 ?**
 Trois copies des données, sur deux supports différents, dont une hors site, une hors ligne ou immuable, et zéro erreur lors des tests de restauration. Le « 1 hors ligne » est ce qui sauve contre un rançongiciel : un disque USB branché en permanence se fait chiffrer comme le reste.

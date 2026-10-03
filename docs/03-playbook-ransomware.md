@@ -27,7 +27,7 @@
 - [ ] Classer la gravité ; S1 : appeler le gérant et le prestataire, activer le groupe de crise hors bande.
 - [ ] Interdire aux salariés de rallumer, rebrancher ou « tester » des postes.
 
-**Éteindre ou non ?** La règle par défaut est d'isoler sans éteindre. Si le chiffrement est visiblement en cours et que l'isolement réseau ne l'arrête pas (chiffrement local qui continue), ou s'il est impossible de débrancher, on peut **mettre en veille prolongée** ou couper l'alimentation pour limiter les dégâts : on perd la mémoire vive, mais on sauve des fichiers. Noter la décision et l'heure.
+**Éteindre ou non ?** La règle par défaut est d'isoler sans éteindre. Si le chiffrement est visiblement en cours et que l'isolement réseau ne l'arrête pas (chiffrement local qui continue), ou s'il est impossible de débrancher, on peut **mettre en veille prolongée** (hibernation : le contenu de la mémoire est écrit dans `hiberfil.sys`, exploitable ensuite par un analyste) ou, en dernier recours, couper l'alimentation (la mémoire vive est alors perdue, mais on sauve des fichiers). Noter la décision et l'heure.
 
 ## 3. Arbre de décision
 

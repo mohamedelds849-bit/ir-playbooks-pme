@@ -111,7 +111,7 @@ Préparation (CSF *Protect*) : code sous Git ; sauvegarde quotidienne fichiers +
 >
 > Le [date], nous avons détecté un accès non autorisé à notre boutique en ligne. Nous avons immédiatement mis le site en maintenance, sécurisé nos systèmes avec notre hébergeur et engagé une analyse.
 >
-> **Données concernées :** [nom, adresse électronique, adresse de livraison, téléphone, historique de commandes, mot de passe chiffré].
+> **Données concernées :** [nom, adresse électronique, adresse de livraison, téléphone, historique de commandes, mot de passe stocké sous forme hachée].
 > **Données non concernées :** vos données de carte bancaire, qui sont saisies uniquement sur la page sécurisée de notre prestataire de paiement et ne sont pas stockées par AgriSouss. [Ne laisser cette phrase que si elle est vérifiée.]
 >
 > **Ce que nous vous recommandons :**

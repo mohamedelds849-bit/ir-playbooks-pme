@@ -4,7 +4,7 @@
 |---|---|---|---|
 | AGS-PB-A | S3, S2 si compte compta/gérant, S1 si virement frauduleux | Detect (DE.CM, DE.AE), Respond (RS.MA, RS.AN, RS.MI), Recover (RC.RP) | Responsable de l'incident (RI) |
 
-**Scénario type.** Une salariée reçoit un faux courriel « document partagé » et saisit son mot de passe Google sur une fausse page. L'attaquant se connecte, crée une règle de transfert vers une adresse externe, lit les échanges avec les clients, puis envoie depuis la vraie boîte une demande de « changement de RIB » à un client B2B (fraude au président / BEC, *Business Email Compromise*).
+**Scénario type.** Une salariée reçoit un faux courriel « document partagé » et saisit son mot de passe Google sur une fausse page. L'attaquant se connecte, crée une règle de transfert vers une adresse externe, lit les échanges avec les clients, puis envoie depuis la vraie boîte une demande de « changement de RIB » à un client B2B (fraude au changement de RIB / faux fournisseur, forme courante de BEC, *Business Email Compromise*).
 
 ## 1. Déclencheurs et sources de détection
 
