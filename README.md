@@ -1,6 +1,6 @@
 # IR Playbooks PME — Dispositif de réponse aux incidents pour une PME marocaine
 
-Projet de portfolio en cybersécurité (réponse aux incidents / GRC). Il fournit un dispositif complet de réponse aux incidents pour **AgriSouss SARL**, une PME agricole **fictive** du Souss (~15 salariés, boutique PHP/MariaDB chez un hébergeur, Google Workspace, postes Windows, un NAS, un informaticien et un prestataire externe). C'est la même entreprise fictive que dans le projet GRC du portfolio.
+Projet de portfolio en cybersécurité (réponse aux incidents / GRC). Il fournit un dispositif complet de réponse aux incidents pour **AgriSouss SARL**, une PME agricole **fictive** du Souss (~15 salariés, boutique PHP/MariaDB chez un hébergeur, Google Workspace, postes Windows, un NAS, un informaticien et un prestataire externe). C'est la même entreprise fictive que dans le projet GRC du portfolio, décrite environ 12 mois après le plan d'action de l'audit (d'où Google Workspace, le NAS sauvegardé et l'informaticien, absents au moment de l'audit ; voir `docs/00-introduction.md`).
 
 > **Contenu uniquement défensif.** Entreprise, personnes et incidents fictifs. Les éléments juridiques sont une lecture des textes publics par l'auteur, pas un avis juridique.
 

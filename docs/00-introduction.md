@@ -13,13 +13,15 @@ Le dossier contient :
 
 ## Contexte de l'entreprise (hypothèses)
 
+> **Lien avec le projet GRC.** L'audit GRC décrit AgriSouss **au moment de l'audit** (comptes Gmail/Drive grand public, aucune sauvegarde testée, pas d'informaticien, paiement à la livraison). Ce dossier décrit l'entreprise **environ 12 mois plus tard**, après le plan d'action de l'audit : messagerie professionnelle Google Workspace sur le domaine de l'entreprise, NAS sauvegardé (actions A04 et suivantes), un informaticien polyvalent désigné référent incidents, et un paiement par carte ajouté via une page hébergée. Les écarts entre les deux projets sont donc voulus.
+
 | Élément | Hypothèse retenue |
 |---|---|
-| Activité | Production et vente de produits agricoles (agrumes, primeurs, huile d'argan), B2B et vente en ligne |
+| Activité | Négoce d'intrants agricoles (engrais, semences) et, depuis peu, vente de produits du terroir (agrumes, huile d'argan) ; B2B et vente en ligne |
 | Effectif | ~15 personnes : gérant, administration/comptabilité (3), commercial (3), logistique/station (6), 1 informaticien polyvalent, stagiaires ponctuels |
 | Messagerie | Google Workspace (Gmail, Drive, Meet), domaine `agrisouss.example` |
-| Site web | Boutique PHP / MariaDB chez un hébergeur externe (hébergement mutualisé ou VPS géré), paiement par carte délégué à une page de paiement hébergée (type CMI) |
-| Postes | ~14 PC Windows 10/11, 1 NAS de partage de fichiers au bureau, Wi-Fi bureau, imprimante réseau |
+| Site web | Boutique PHP / MariaDB chez un hébergeur externe (hébergement mutualisé ou VPS géré), paiement à la livraison majoritaire ; paiement par carte ajouté après l'audit GRC, délégué à une page de paiement hébergée (type CMI) |
+| Postes | 7 à 8 PC Windows 10/11 (dont 2 portables), 1 NAS de partage de fichiers au bureau, Wi-Fi bureau, imprimante réseau |
 | Sauvegardes | NAS sauvegardé chaque nuit sur disque USB + copie hebdomadaire hors site (hypothèse à vérifier en exercice) |
 | Sécurité | Antivirus Microsoft Defender, pas de SOC, pas de SIEM, 1 informaticien interne + prestataire externe sous contrat de maintenance |
 | Assurance | Pas de police cyber au moment de la rédaction (point d'amélioration) |
